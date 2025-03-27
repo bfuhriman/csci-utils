@@ -16,7 +16,7 @@ Then, add the following to your `~/.bashrc` file, replacing `your_username` and 
 ```
 alias vpn="~/csci-utils/vpn.sh"
 alias odin="~/csci-utils/odin.sh"
-alias ctest="python ~/csci-utils/ctest.py"
+alias ctest="python3 ~/csci-utils/ctest.py"
 export ODIN_USERNAME="your_username"
 export ODIN_PASSWORD="your_password"
 ```
