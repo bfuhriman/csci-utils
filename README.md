@@ -12,12 +12,29 @@ Navigate to your home directory and clone the repository:
 ```
 git clone https://github.com/bfuhriman/csci-utils
 ```
-Then, add the following to your `~/.bashrc` file, replacing `your_username` and `your_password` with your UGA credentials (your username is what comes before `@uga.edu` in your email). Make sure to update these file paths if you move `csci-utils` out of the home directory.
+
+### VPN and SSH Scripts
+Add the following to your `~/.bashrc` file, replacing `your_username` and `your_password` with your UGA credentials (your username is what comes before `@uga.edu` in your email).
 ```
 alias vpn="~/csci-utils/vpn.sh"
 alias odin="~/csci-utils/odin.sh"
-alias ctest="python3 ~/csci-utils/ctest.py"
 export ODIN_USERNAME="your_username"
 export ODIN_PASSWORD="your_password"
 ```
-Congrats! You may now use `vpn`, `odin`, and `ctest` from anywhere on your system.
+Run the following command to update `~/.bashrc`.
+```
+source ~/.bashrc
+```
+You may now use the `vpn` and `odin` commands from anywhere on your system.
+
+### ctest
+Add the following line somewhere in your `~/.bashrc` file.
+```
+alias ctest="python3 ~/csci-utils/ctest.py"
+```
+Run the following commands to update `~/.bashrc` and install `pymupdf`.
+```
+source ~/.bashrc
+pip install pymupdf
+```
+You may now use the `ctest` command in any directory that contains a C executable and an assignment PDF. You'll need to do this process twice if you want to use `ctest` on both Odin and your personal computer.
