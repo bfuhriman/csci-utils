@@ -11,10 +11,7 @@ def find_pdf():
 
 # Extract text from the PDF document
 def text(pdf):
-    try:
-        return chr(12).join(page.get_text() for page in pymupdf.open(pdf)).split("\n")
-    except pymupdf.FileNotFoundError:
-        sys.exit(f"Could not find \"{pdf}\" in the current directory.")
+    return chr(12).join(page.get_text() for page in pymupdf.open(pdf)).split("\n")
 
 # Run the commands from the examples section
 def run_tests(pdf):
