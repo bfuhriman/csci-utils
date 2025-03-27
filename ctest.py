@@ -9,13 +9,10 @@ def find_pdf():
         if file.endswith(".pdf"): return file
     sys.exit("No PDF document was found in the current directory.")
 
-# Extract text from the PDF document
-def text(pdf):
-    return chr(12).join(page.get_text() for page in pymupdf.open(pdf)).split("\n")
-
-# Run the commands from the examples section
+# Parse PDF text and run the commands in the examples section
 def run_tests(pdf):
-    commands = [line.strip() for line in text(pdf) if line.startswith("./")]
+    text = chr(12).join(page.get_text() for page in pymupdf.open(pdf)).split("\n")
+    commands = [line.strip() for line in text if line.startswith("./")]
     for i, command in enumerate(commands):
         print(command)
         subprocess.run(command, shell=True, stdout=sys.stdout, stderr=sys.stderr, text=True)
