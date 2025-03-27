@@ -1,7 +1,7 @@
 ## About
 Programming on Odin can be annoying. Make it easier with csci-utils, featuring:
 
-`vpn.sh` - A script that allows you to connect to UGA's remote access VPN with a single command. You'll still need to answer your phone to verify your login (the script can be easily altered if you prefer a different form of 2FA).
+`vpn.sh` - A script that allows you to connect to UGA's remote access VPN with a single command. You'll still need to answer your phone to verify your identity (the script can be altered if you prefer a different form of 2FA).
 
 `odin.sh` - A script that allows you to connect to UGA's Odin server with a single command.
 
