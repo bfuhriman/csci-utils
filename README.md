@@ -5,6 +5,8 @@ Programming on Odin can be annoying. Make it easier with csci-utils, featuring:
 
 `odin.sh` - A script that allows you to connect to UGA's Odin server with a single command.
 
+`vcf.sh` - A script that allows you to connect to any of Odin's VCF nodes with a single command. Just provide it with the number of the node you want to connect to, eg `vcf 2`.
+
 `ctest.py` - A python script that looks for an assignment PDF in the current directory and automatically executes any commands in the "Examples" section, making testing your program significantly easier. Specifically designed for CSCI 1730 (Systems Programming), but might work for some other courses.
 
 ## Setup
@@ -27,7 +29,7 @@ Run the following commands to update `~/.bashrc` and make the scripts executable
 source ~/.bashrc
 chmod +x ~/csci-utils/vpn.sh ~/csci-utils/odin.sh ~/csci-utils/vcf.sh
 ```
-You may now use the `vpn` and `odin` commands from anywhere on your system.
+You may now use the `vpn`, `odin`, and `vcf` commands from anywhere on your system.
 
 ### ctest
 Add the following line somewhere in your `~/.bashrc` file.
