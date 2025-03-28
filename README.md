@@ -37,4 +37,7 @@ Run the following commands to update `~/.bashrc` and install `pymupdf`.
 source ~/.bashrc
 pip install pymupdf
 ```
-You may now use the `ctest` command in any directory that contains a C executable and an assignment PDF. You'll need to do this process twice if you want to use `ctest` on both Odin and your personal computer.
+You may now use the `ctest` command in any directory that contains a C executable and an assignment PDF. You'll need to do this process twice if you want to use `ctest` on both Odin and your personal computer. By default, `ctest` will run all commands in the PDF, but you can call it with a single integer argument to run a specific command. The command below will execute **only** the `n`th command found in the PDF document.
+```
+ctest n
+```
