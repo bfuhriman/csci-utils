@@ -18,12 +18,14 @@ Add the following to your `~/.bashrc` file, replacing `your_username` and `your_
 ```
 alias vpn="~/csci-utils/vpn.sh"
 alias odin="~/csci-utils/odin.sh"
+alias vcf="~/csci-utils/vcf.sh"
 export ODIN_USERNAME="your_username"
 export ODIN_PASSWORD="your_password"
 ```
-Run the following command to update `~/.bashrc`.
+Run the following commands to update `~/.bashrc` and make the scripts executable.
 ```
 source ~/.bashrc
+chmod +x ~/csci-utils/vpn.sh ~/csci-utils/odin.sh ~/csci-utils/vcf.sh
 ```
 You may now use the `vpn` and `odin` commands from anywhere on your system.
 
